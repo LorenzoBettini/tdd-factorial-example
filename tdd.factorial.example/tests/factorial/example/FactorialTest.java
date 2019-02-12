@@ -19,4 +19,8 @@ public class FactorialTest {
 		assertEquals(1, factorial.compute(0));
 	}
 
+	@Test
+	public void testFactorialOf1() {
+		assertEquals(1, factorial.compute(1));
+	}
 }
