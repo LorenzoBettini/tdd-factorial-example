@@ -23,4 +23,9 @@ public class FactorialTest {
 	public void testFactorialOf1() {
 		assertEquals(1, factorial.compute(1));
 	}
+
+	@Test
+	public void testFactorialOf2() {
+		assertEquals(2, factorial.compute(2));
+	}
 }
