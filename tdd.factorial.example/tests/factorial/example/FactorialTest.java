@@ -38,4 +38,11 @@ public class FactorialTest {
 	public void testFactorialOf4() {
 		assertEquals(24, factorial.compute(4));
 	}
+
+	@Test
+	public void testNegativeInput() {
+		IllegalArgumentException thrown = assertThrows(IllegalArgumentException.class,
+			() -> factorial.compute(-1));
+		assertEquals("Negative input: -1", thrown.getMessage());
+	}
 }
